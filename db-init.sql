@@ -1,17 +1,17 @@
 CREATE DATABASE testdb;
-go
+GO
 
 use testdb;
-go
+GO
 
 DROP TABLE IF EXISTS members;
 GO
 
 CREATE TABLE members(
-    id int identity(1,1) primary key,
+    id int identity(1001,1) primary key,
     name nvarchar(32),
     birthday datetime
-);
+);  
 GO
 
 BULK INSERT members
